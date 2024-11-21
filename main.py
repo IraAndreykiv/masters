@@ -49,7 +49,7 @@ def predict_survival(passenger: PassengerData):
         raise HTTPException(status_code=500, detail=str(e))
 
 
-# Додайте базовий ендпоінт
+# Базовий ендпоінт
 @app.get("/")
 def read_root():
     return {"message": "Welcome to the Titanic Survival Prediction API!"}
